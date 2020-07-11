@@ -6,7 +6,7 @@ export const Container = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 5px 8px;
+  padding: 5px 3px 5px 8px;
 
   transition: all 0.2s;
 
@@ -40,9 +40,19 @@ export const HashtagIcon = styled(FiHash)`
 
 export const AddPersonIcon = styled(MdPersonAdd)`
   color: var(--symbol);
+  cursor: pointer;
+  transition: all 0.2s;
+  &:hover {
+    color: var(--white);
+  }
 `;
 
 export const ConfigIcon = styled(MdSettings)`
   color: var(--symbol);
   margin-left: 2px;
+  cursor: pointer;
+  transition: all 0.2s;
+  &:hover {
+    color: var(--white);
+  }
 `;

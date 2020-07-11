@@ -48,6 +48,11 @@ export const MicIcon = styled(MdMic)`
   width: 20px;
   height: 20px;
   opacity: 0.7;
+  cursor: pointer;
+  transition: all 0.2s;
+  &:hover {
+    opacity: 1;
+  }
 `;
 
 export const HeadphoneIcon = styled(MdHeadset)`
@@ -55,6 +60,11 @@ export const HeadphoneIcon = styled(MdHeadset)`
   width: 20px;
   height: 20px;
   opacity: 0.7;
+  cursor: pointer;
+  transition: all 0.2s;
+  &:hover {
+    opacity: 1;
+  }
 `;
 
 export const SettingsIcon = styled(MdSettings)`
@@ -62,4 +72,9 @@ export const SettingsIcon = styled(MdSettings)`
   width: 20px;
   height: 20px;
   opacity: 0.7;
+  cursor: pointer;
+  transition: all 0.2s;
+  &:hover {
+    opacity: 1;
+  }
 `;

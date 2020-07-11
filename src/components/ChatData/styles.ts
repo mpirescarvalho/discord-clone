@@ -33,10 +33,17 @@ export const Message = styled.div`
   display: flex;
   align-items: center;
 
-  margin-left: 16px;
+  background-color: transparent;
+
+  padding: 3px 0 3px 16px;
+
+  &.mention {
+    background-color: var(--mention-message);
+    border-left: 2px solid var(--mention-detail);
+  }
 
   & + div {
-    margin-top: 20px;
+    margin-top: 14px;
   }
 
   > div > div > span {

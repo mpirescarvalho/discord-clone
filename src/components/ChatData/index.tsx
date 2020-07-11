@@ -26,7 +26,7 @@ const ChatData: React.FC = () => {
           </Message>
         ))}
 
-        <Message>
+        <Message className="mention">
           <Avatar className="bot" />
           <div>
             <div>

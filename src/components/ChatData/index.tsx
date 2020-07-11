@@ -1,6 +1,14 @@
 import React from 'react';
 
-import { Container, Chat, Message, Avatar } from './styles';
+import {
+  Container,
+  Chat,
+  Message,
+  Avatar,
+  ContainerInput,
+  Input,
+  InputIcon,
+} from './styles';
 
 const ChatData: React.FC = () => {
   return (
@@ -33,7 +41,10 @@ const ChatData: React.FC = () => {
           </div>
         </Message>
       </Chat>
-      {/* <Input /> */}
+      <ContainerInput>
+        <InputIcon />
+        <Input placeholder="Conversar em #chat-live" />
+      </ContainerInput>
     </Container>
   );
 };

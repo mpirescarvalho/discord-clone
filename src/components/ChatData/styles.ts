@@ -1,14 +1,19 @@
 import styled from 'styled-components';
+import { FiAtSign } from 'react-icons/fi';
 
 export const Container = styled.div`
   grid-area: CD;
 
-  height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 
   background-color: var(--primary);
+`;
+
+export const Chat = styled.div`
+  height: calc(100vh - 46px - 68px);
+  padding: 22px 0;
 
   overflow-y: scroll;
 
@@ -22,10 +27,6 @@ export const Container = styled.div`
   ::-webkit-scrollbar-track {
     background-color: var(--secondary);
   }
-`;
-
-export const Chat = styled.div`
-  padding: 22px 0;
 `;
 
 export const Message = styled.div`
@@ -83,4 +84,29 @@ export const Avatar = styled.div`
   &.bot {
     background-color: var(--mention-detail);
   }
+`;
+
+export const ContainerInput = styled.div`
+  width: calc(100% - 32px);
+  margin: 0 16px 23px 16px;
+  background-color: var(--chat-input);
+  height: 44px;
+  display: flex;
+  align-items: center;
+  border-radius: 6px;
+`;
+
+export const Input = styled.input`
+  color: var(--white);
+  background: none;
+  flex-grow: 1;
+  height: 100%;
+  padding: 0 10px 0 0;
+`;
+
+export const InputIcon = styled(FiAtSign)`
+  width: 20px;
+  height: 20px;
+  color: var(--gray);
+  margin: 0 21px 0 16px;
 `;
